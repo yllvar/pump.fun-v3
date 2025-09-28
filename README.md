@@ -1,12 +1,14 @@
-# 🚀 Pump.fun API Client & SDK
+# 🚀 Pump.fun Front-end Endpoints
 
-A comprehensive, production-ready toolkit for interacting with the Pump.fun API. This repository provides official client libraries, detailed documentation, and practical examples in both Python and JavaScript/TypeScript.
+Interact with the Pump.fun API. This repository provides official pump.fun frontend endpoints, detailed documentation, and practical examples in both Python and JavaScript/TypeScript.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Node Version](https://img.shields.io/badge/node-14+-brightgreen.svg)](https://nodejs.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/pump.fun-v3?style=social)](https://github.com/yourusername/pump.fun-v3)
+
+<img width="1134" height="571" alt="Screenshot 2025-09-29 at 05 08 20" src="https://github.com/user-attachments/assets/eac7a0e6-c035-45d0-83e5-79f03c1892cf" />
 
 ## ✨ Features
 
@@ -50,7 +52,7 @@ A comprehensive, production-ready toolkit for interacting with the Pump.fun API.
 pip install pumpfun-api
 
 # Or install from source
-git clone https://github.com/yourusername/pump.fun-v3.git
+git clone https://github.com/yllvar/pump.fun-v3.git
 cd pump.fun-v3
 pip install -e .
 ```
@@ -64,7 +66,7 @@ npm install pumpfun-api
 yarn add pumpfun-api
 
 # Or install from source
-git clone https://github.com/yourusername/pump.fun-v3.git
+git clone https://github.com/yllvar/pump.fun-v3.git
 cd pump.fun-v3/examples/javascript
 npm install
 ```
@@ -274,11 +276,6 @@ The client automatically handles rate limiting with exponential backoff. When a 
 
 ### Core Concepts
 
-#### Authentication
-```python
-# API Key Authentication (if required)
-client = PumpFunAPI(api_key="your-api-key")
-```
 
 #### Making Requests
 ```javascript
@@ -321,14 +318,6 @@ except pumpfun.APIError as e:
 - `set_api_key(api_key)` - Update the API key
 - `set_timeout(timeout)` - Set request timeout in seconds
 
-### WebSocket Support (Coming Soon)
-```javascript
-const ws = new PumpFunWebSocket();
-ws.on('trade', (trade) => {
-  console.log('New trade:', trade);
-});
-ws.connect();
-```
 
 ### Detailed Documentation
 
@@ -500,7 +489,7 @@ We welcome contributions from the community! Here's how you can help:
 ### How to Contribute
 
 1. **Report Bugs**
-   - Check if the bug has already been reported in [GitHub Issues](https://github.com/yourusername/pump.fun-v3/issues)
+   - Check if the bug has already been reported in [GitHub Issues](https://github.com/yllvar/pump.fun-v3/issues)
    - If not, create a new issue with a clear title and description
    - Include code to reproduce the issue if possible
 
@@ -552,15 +541,10 @@ We welcome contributions from the community! Here's how you can help:
 4. Follows project coding standards
 5. No decrease in test coverage
 
-### Community
-
-- Join our [Discord](https://discord.gg/your-discord) for discussions
-- Follow us on [Twitter](https://twitter.com/pumpfun) for updates
-- Read our [Blog](https://blog.pump.fun) for announcements
 
 ### Good First Issues
 
-Looking for a place to start? Check out our [Good First Issues](https://github.com/yourusername/pump.fun-v3/labels/good%20first%20issue) for beginner-friendly tasks.
+Looking for a place to start? Check out our [Good First Issues](https://github.com/yllvar/pump.fun-v3/labels/good%20first%20issue) for beginner-friendly tasks.
 
 ## 📜 License
 
@@ -568,14 +552,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support & Contact
 
-- **GitHub Issues**: [Open an issue](https://github.com/yourusername/pump.fun-v3/issues)
+- **GitHub Issues**: [Open an issue](https://github.com/yllvar/pump.fun-v3/issues)
 - **Email**: support@pump.fun
 - **Twitter**: [@pumpfun](https://twitter.com/pumpfun)
 - **Discord**: [Join our community](https://discord.gg/your-discord)
 
 ## 🙏 Acknowledgments
 
-- Thanks to all [contributors](https://github.com/yourusername/pump.fun-v3/graphs/contributors) who have helped improve this project
+- Thanks to all [contributors](https://github.com/yllvar/pump.fun-v3/graphs/contributors) who have helped improve this project
 - Built with ❤️ by the Pump.fun team
 - Special thanks to our early adopters and beta testers
 
