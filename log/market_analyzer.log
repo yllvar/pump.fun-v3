@@ -1,0 +1,108 @@
+2025-09-29 03:54:59,501 - INFO - Fetching top 10 tokens by market cap...
+2025-09-29 03:55:05,110 - INFO - Fetching top 10 tokens by market cap...
+2025-09-29 03:55:11,692 - INFO - Searching for tokens matching: ethereum
+2025-09-29 03:55:12,227 - ERROR - Error searching tokens: 'list' object has no attribute 'get'
+2025-09-29 03:55:22,555 - INFO - Analyzing token: TOKEN_ADDRESS
+2025-09-29 03:55:29,181 - ERROR - Error analyzing token: 'list' object has no attribute 'get'
+2025-09-29 03:59:33,641 - INFO - Fetching top 5 tokens by market cap...
+2025-09-29 03:59:33,641 - DEBUG - Calling get_latest_coins API...
+2025-09-29 03:59:34,033 - DEBUG - API Response: {
+  "mint": "5wWopbHAXQLdv8nFjziXMsyr1ybN4Af6VvwjNMPGxZ4j",
+  "name": "Dev PPM",
+  "symbol": "DevPPM",
+  "description": "This project is with unprecedented community engagement. Fresh meat: Dev PPM (DevPPM) Pump V1. Get in or get rekt.",
+  "image_uri": "https://ipfs.io/ipfs/bafybeichuxzj4nrd3saixjlawd7o4ktzgyvimqmn3luxmk3pkniki63t24",
+  "metadata_uri": "https://ipfs.io/ipfs/bafkreigboav6udgw3ifjl4sbabyqxxm4hjmodvog7kksujkanhhl6ev4ca",
+  "twitter": "https://x.com/ackeyros",
+  "telegram": "",
+  "bonding_curve": "CTr8uYvMgUtSaqHKQXdcGtpVcxPJ7niEbkC5ptmDHxfD",
+  "associated_bonding_curve": "CazeXHVYXXoD72Hgg8Gsrnh3ANBfv7mHdbCBN5ng4sDh",
+  "creator": "BuB5qDWTEJt6irr2ateCeCmTJCVkhbC6yEa96ckPjEX5",
+  "created_timestamp": 1759089571906,
+  "raydium_pool": null,
+  "complete": false,
+  "virtual_sol_reserves": 30000000000,
+  "virtual_token_reserves": 1073000000000000,
+  "hidden": null,
+  "total_supply": 1000000000000000,
+  "website": "",
+  "show_name": true,
+  "last_trade_timestamp": null,
+  "king_of_the_hill_timestamp": null,
+  "market_cap": 27.958993476,
+  "nsfw": false,
+  "market_id": null,
+  "inverted": null,
+  "real_sol_reserves": 0,
+  "real_token_reserves": 793100000000000,
+  "livestream_ban_expiry": 0,
+  "last_reply": null,
+  "reply_count": 0,
+  "is_banned": false,
+  "is_currently_live": false,
+  "initialized": false,
+  "video_uri": null,
+  "updated_at": null,
+  "pump_swap_pool": null,
+  "ath_market_cap": null,
+  "ath_market_cap_timestamp": null,
+  "banner_uri": null,
+  "hide_banner": false,
+  "livestream_downrank_score": 0,
+  "program": "pump",
+  "platform": null
+}
+2025-09-29 03:59:51,633 - INFO - Fetching top 5 tokens by market cap...
+2025-09-29 03:59:51,633 - DEBUG - Calling get_latest_coins API...
+2025-09-29 03:59:51,996 - DEBUG - API Response type: <class 'dict'>
+2025-09-29 03:59:51,996 - DEBUG - API Response keys: ['mint', 'name', 'symbol', 'description', 'image_uri', 'metadata_uri', 'twitter', 'telegram', 'bonding_curve', 'associated_bonding_curve', 'creator', 'created_timestamp', 'raydium_pool', 'complete', 'virtual_sol_reserves', 'virtual_token_reserves', 'hidden', 'total_supply', 'website', 'show_name', 'last_trade_timestamp', 'king_of_the_hill_timestamp', 'market_cap', 'nsfw', 'market_id', 'inverted', 'real_sol_reserves', 'real_token_reserves', 'livestream_ban_expiry', 'last_reply', 'reply_count', 'is_banned', 'is_currently_live', 'initialized', 'video_uri', 'updated_at', 'pump_swap_pool', 'ath_market_cap', 'ath_market_cap_timestamp', 'banner_uri', 'hide_banner', 'livestream_downrank_score', 'program', 'platform']
+2025-09-29 03:59:51,996 - DEBUG - Received single token response, wrapping in list
+2025-09-29 04:01:47,904 - INFO - Fetching top 5 tokens by market cap...
+2025-09-29 04:02:07,148 - INFO - Fetching top 3 tokens by market cap...
+2025-09-29 04:02:07,149 - ERROR - Error fetching token 1: PumpFunAPI.get_latest_coins() got an unexpected keyword argument 'offset'
+2025-09-29 04:02:07,149 - ERROR - Error fetching token 2: PumpFunAPI.get_latest_coins() got an unexpected keyword argument 'offset'
+2025-09-29 04:02:07,149 - ERROR - Error fetching token 3: PumpFunAPI.get_latest_coins() got an unexpected keyword argument 'offset'
+2025-09-29 04:02:07,149 - INFO - Successfully fetched 0 tokens
+2025-09-29 04:02:41,621 - INFO - Fetching top 3 latest tokens...
+2025-09-29 04:02:41,998 - INFO - Found 1 tokens
+2025-09-29 04:04:40,768 - INFO - Fetching top 3 latest tokens...
+2025-09-29 04:04:42,429 - INFO - Found 1 tokens
+2025-09-29 04:05:01,618 - INFO - Fetching top 3 latest tokens...
+2025-09-29 04:05:02,460 - ERROR - Error in get_token_details: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/HvpvD1G6MLthdihGYTqvTJMUVcMSXmTDYuBnmcVwzEbe/metadata
+2025-09-29 04:05:02,661 - INFO - Found 1 tokens
+2025-09-29 04:06:41,133 - INFO - Fetching top 3 latest tokens...
+2025-09-29 04:06:41,517 - INFO - Found 1 tokens
+2025-09-29 04:12:21,844 - INFO - Fetching top 3 latest tokens...
+2025-09-29 04:12:22,211 - INFO - Found 1 tokens
+2025-09-29 04:16:04,186 - INFO - Searching for tokens matching: BTC
+2025-09-29 04:16:04,683 - INFO - Found 10 matching tokens
+2025-09-29 04:16:11,903 - INFO - Searching for tokens matching: 5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:16:12,964 - INFO - Found 1 matching tokens
+2025-09-29 04:20:49,258 - INFO - Analyzing price history for token: 5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:20:49,651 - ERROR - Error analyzing price history: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+Traceback (most recent call last):
+  File "/Users/apple/pump.fun-v3/utils/python_client.py", line 66, in _request
+    response.raise_for_status()
+  File "/opt/anaconda3/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/apple/pump.fun-v3/examples/python/advanced_examples.py", line 54, in analyze_token_price_history
+    token_info = self.client._request('GET', f'/tokens/{token_address}')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/pump.fun-v3/utils/python_client.py", line 76, in _request
+    raise Exception(f"API request failed: {error_msg}") from e
+Exception: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:21:46,585 - INFO - Analyzing price history for token: 5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:21:46,585 - INFO - Analyzing token: 5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:21:52,793 - INFO - Fetching activity for wallet: 33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ
+2025-09-29 04:21:52,793 - INFO - Analyzing wallet: 33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ
+2025-09-29 04:21:53,336 - INFO - No token balances found for wallet
+2025-09-29 04:21:54,462 - INFO - No created coins found for wallet
+2025-09-29 04:22:00,545 - INFO - Starting token monitor (checking every 5 minutes)
+2025-09-29 04:22:00,545 - INFO - Checking for new tokens (iteration 1)...
+2025-09-29 04:22:00,913 - INFO - New token: saying “Okay” instead ($Okay) - 1759090911172
+2025-09-29 04:22:00,913 - INFO - Token monitoring stopped

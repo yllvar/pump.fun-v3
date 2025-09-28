@@ -1,0 +1,125 @@
+2025-09-29 03:41:54,203 - INFO - Starting wallet info for address: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:41:54,203 - INFO - Fetching holdings for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:41:54,642 - ERROR - Unexpected response format: []
+2025-09-29 03:41:54,642 - INFO - Wallet info completed successfully
+2025-09-29 03:42:25,383 - INFO - Starting wallet info for address: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:42:25,383 - INFO - Fetching holdings for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:42:25,796 - ERROR - Unexpected response format: []
+2025-09-29 03:42:25,796 - INFO - Wallet info completed successfully
+2025-09-29 03:44:44,808 - INFO - Starting wallet info for address: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:44:44,808 - INFO - Fetching holdings for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:44:45,185 - ERROR - Error fetching wallet holdings: name 'logger' is not defined
+Traceback (most recent call last):
+  File "/Users/apple/pump.fun-v3/utils/python_client.py", line 64, in _request
+    response.raise_for_status()
+  File "/opt/anaconda3/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/user-tokens/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/apple/pump.fun-v3/utils/python_client.py", line 165, in get_wallet_holdings
+    response = self._request('GET', f'/user-tokens/{wallet_address}')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/pump.fun-v3/utils/python_client.py", line 74, in _request
+    raise Exception(f"API request failed: {error_msg}") from e
+Exception: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/user-tokens/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/apple/pump.fun-v3/examples/python/wallet_info.py", line 103, in get_wallet_holdings
+    holdings = client.get_wallet_holdings(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/pump.fun-v3/utils/python_client.py", line 184, in get_wallet_holdings
+    logger.warning(f"Failed to fetch wallet holdings: {str(e)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2025-09-29 03:44:45,187 - INFO - Wallet info completed successfully
+2025-09-29 03:46:37,124 - DEBUG - Debug logging enabled
+2025-09-29 03:46:37,125 - INFO - Starting wallet info for address: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:46:37,125 - ERROR - An error occurred: name 'logging' is not defined
+Traceback (most recent call last):
+  File "/Users/apple/pump.fun-v3/examples/python/wallet_info.py", line 309, in main
+    client = PumpFunAPI()
+             ^^^^^^^^^^^^
+  File "/Users/apple/pump.fun-v3/utils/python_client.py", line 29, in __init__
+    self.logger = logging.getLogger('PumpFunAPI')
+                  ^^^^^^^
+NameError: name 'logging' is not defined. Did you forget to import 'logging'
+2025-09-29 03:49:06,289 - DEBUG - Debug logging enabled
+2025-09-29 03:49:06,289 - INFO - Starting wallet info for address: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:06,289 - INFO - Fetching holdings for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:06,289 - DEBUG - Fetching created coins for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:06,297 - DEBUG - Starting new HTTPS connection (1): frontend-api-v3.pump.fun:443
+2025-09-29 03:49:06,735 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/user-created-coins/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX?offset=0&limit=10&includeNsfw=false HTTP/1.1" 200 22
+2025-09-29 03:49:06,736 - DEBUG - No created coins found, trying token balances...
+2025-09-29 03:49:07,033 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens HTTP/1.1" 404 None
+2025-09-29 03:49:07,035 - DEBUG - Endpoint /wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens
+2025-09-29 03:49:07,325 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /tokens/wallet/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX HTTP/1.1" 404 None
+2025-09-29 03:49:07,326 - DEBUG - Endpoint /tokens/wallet/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/wallet/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:07,622 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /v1/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens HTTP/1.1" 404 None
+2025-09-29 03:49:07,622 - DEBUG - Endpoint /v1/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/v1/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens
+2025-09-29 03:49:07,622 - WARNING - No valid endpoint found for wallet tokens
+2025-09-29 03:49:07,622 - INFO - Fetching created coins for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:07,974 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/user-created-coins/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX?offset=0&limit=10&includeNsfw=false HTTP/1.1" 200 22
+2025-09-29 03:49:07,975 - INFO - Wallet info completed successfully
+2025-09-29 03:49:46,550 - DEBUG - Debug logging enabled
+2025-09-29 03:49:46,550 - INFO - Starting wallet info for address: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:46,551 - INFO - Fetching holdings for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:46,551 - DEBUG - Fetching created coins for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:46,561 - DEBUG - Starting new HTTPS connection (1): frontend-api-v3.pump.fun:443
+2025-09-29 03:49:46,973 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/user-created-coins/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX?offset=0&limit=10&includeNsfw=false HTTP/1.1" 200 22
+2025-09-29 03:49:46,974 - DEBUG - No created coins found, trying token balances...
+2025-09-29 03:49:47,256 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens HTTP/1.1" 404 None
+2025-09-29 03:49:47,257 - DEBUG - Endpoint /wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens
+2025-09-29 03:49:47,540 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /tokens/wallet/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX HTTP/1.1" 404 None
+2025-09-29 03:49:47,541 - DEBUG - Endpoint /tokens/wallet/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/wallet/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:47,833 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /v1/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens HTTP/1.1" 404 None
+2025-09-29 03:49:47,833 - DEBUG - Endpoint /v1/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/v1/wallets/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX/tokens
+2025-09-29 03:49:47,833 - WARNING - No valid endpoint found for wallet tokens
+2025-09-29 03:49:47,833 - INFO - Fetching created coins for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:49:48,260 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/user-created-coins/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX?offset=0&limit=10&includeNsfw=false HTTP/1.1" 200 22
+2025-09-29 03:49:48,260 - INFO - Wallet info completed successfully
+2025-09-29 03:50:28,546 - DEBUG - Debug logging enabled
+2025-09-29 03:50:28,547 - INFO - Starting wallet info for address: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:50:28,547 - INFO - Fetching holdings for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:50:28,547 - DEBUG - Fetching token balances for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:50:28,555 - DEBUG - Starting new HTTPS connection (1): frontend-api-v3.pump.fun:443
+2025-09-29 03:50:28,914 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /tokens?wallet=2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX&limit=10&offset=0&sort=balance&order=desc HTTP/1.1" 404 None
+2025-09-29 03:50:28,915 - WARNING - Error fetching token balances: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens?wallet=2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX&limit=10&offset=0&sort=balance&order=desc
+2025-09-29 03:50:28,915 - INFO - No token balances found for wallet
+2025-09-29 03:50:28,915 - INFO - Fetching created coins for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:50:28,915 - DEBUG - Fetching created coins for wallet: 2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX
+2025-09-29 03:50:29,266 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/user-created-coins/2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX?offset=0&limit=10&includeNsfw=false&sort=created_timestamp&order=desc HTTP/1.1" 200 22
+2025-09-29 03:50:29,606 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/search?creator=2AQdpHJ2JpcEgPiATUXjnmAWSYnzsFfUeH3L6r3jTmcX&limit=10&offset=0&includeNsfw=false&sort=created_timestamp&order=desc HTTP/1.1" 200 2
+2025-09-29 03:50:29,606 - INFO - No created coins found for wallet
+2025-09-29 03:50:29,606 - INFO - Wallet info completed successfully
+2025-09-29 03:51:28,760 - DEBUG - Debug logging enabled
+2025-09-29 03:51:28,760 - INFO - Starting wallet info for address: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:51:28,760 - INFO - Fetching holdings for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:51:28,760 - DEBUG - Fetching token balances for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:51:28,768 - DEBUG - Starting new HTTPS connection (1): frontend-api-v3.pump.fun:443
+2025-09-29 03:51:29,127 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /tokens?wallet=AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8&limit=10&offset=0&sort=balance&order=desc HTTP/1.1" 404 None
+2025-09-29 03:51:29,131 - WARNING - Error fetching token balances: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens?wallet=AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8&limit=10&offset=0&sort=balance&order=desc
+2025-09-29 03:51:29,131 - INFO - No token balances found for wallet
+2025-09-29 03:51:29,131 - INFO - Fetching created coins for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:51:29,131 - DEBUG - Fetching created coins for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:51:29,486 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/user-created-coins/AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8?offset=0&limit=10&includeNsfw=false&sort=created_timestamp&order=desc HTTP/1.1" 200 22
+2025-09-29 03:51:29,835 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/search?creator=AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8&limit=10&offset=0&includeNsfw=false&sort=created_timestamp&order=desc HTTP/1.1" 200 2
+2025-09-29 03:51:29,836 - INFO - No created coins found for wallet
+2025-09-29 03:51:29,837 - INFO - Wallet info completed successfully
+2025-09-29 03:52:37,820 - DEBUG - Debug logging enabled
+2025-09-29 03:52:37,820 - INFO - Starting wallet info for address: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:52:37,821 - INFO - Fetching holdings for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:52:37,821 - DEBUG - Fetching token balances for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:52:37,826 - DEBUG - Starting new HTTPS connection (1): frontend-api-v3.pump.fun:443
+2025-09-29 03:52:38,266 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /balances/AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8?limit=10&offset=0&minBalance=0 HTTP/1.1" 200 2
+2025-09-29 03:52:38,267 - INFO - No token balances found for wallet
+2025-09-29 03:52:38,267 - INFO - Fetching created coins for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:52:38,267 - DEBUG - Fetching created coins for wallet: AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8
+2025-09-29 03:52:38,631 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/user-created-coins/AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8?offset=0&limit=10&includeNsfw=false&sort=created_timestamp&order=desc HTTP/1.1" 200 22
+2025-09-29 03:52:38,964 - DEBUG - https://frontend-api-v3.pump.fun:443 "GET /coins/search?creator=AbdeJ2GoJzmFEjpodLPmXGrWnnmAtSK13mr2zCFWyPs8&limit=10&offset=0&includeNsfw=false&sort=created_timestamp&order=desc HTTP/1.1" 200 2
+2025-09-29 03:52:38,965 - INFO - No created coins found for wallet
+2025-09-29 03:52:38,965 - INFO - Wallet info completed successfully

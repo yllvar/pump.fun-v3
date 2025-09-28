@@ -1,0 +1,18 @@
+2025-09-29 03:31:23,921 - INFO - Starting token metrics for: SOL
+2025-09-29 03:31:23,921 - INFO - Looking up token: SOL
+2025-09-29 03:31:24,797 - ERROR - Token not found: SOL
+2025-09-29 03:31:35,492 - INFO - Starting token metrics for: PEPE
+2025-09-29 03:31:35,492 - INFO - Looking up token: PEPE
+2025-09-29 03:31:36,947 - ERROR - Token not found: PEPE
+2025-09-29 03:34:41,660 - INFO - Starting token metrics for: retire
+2025-09-29 03:34:41,660 - INFO - Looking up token: retire
+2025-09-29 03:34:42,466 - ERROR - Token not found: retire
+2025-09-29 03:34:52,936 - INFO - Starting token metrics for: retire
+2025-09-29 03:34:52,936 - INFO - Looking up token: retire
+2025-09-29 03:34:53,956 - ERROR - Token not found: retire
+2025-09-29 03:41:30,457 - INFO - Starting token metrics for: SOL
+2025-09-29 03:41:30,458 - INFO - Looking up token: SOL
+2025-09-29 03:41:31,174 - INFO - Token metrics completed successfully
+2025-09-29 03:41:39,564 - INFO - Starting token metrics for: retire
+2025-09-29 03:41:39,564 - INFO - Looking up token: retire
+2025-09-29 03:41:40,073 - INFO - Token metrics completed successfully

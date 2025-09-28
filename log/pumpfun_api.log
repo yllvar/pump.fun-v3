@@ -1,0 +1,4 @@
+2025-09-29 03:25:41,465 - INFO - Starting Pump.fun API example: Get Latest Trades
+2025-09-29 03:25:41,465 - INFO - Fetching the latest trades...
+2025-09-29 03:25:41,858 - INFO - Trade: RAGE - SOL: 319626277, Tokens: 2532060590836, Type: SELL
+2025-09-29 03:25:41,859 - INFO - Script completed successfully

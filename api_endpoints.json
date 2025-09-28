@@ -1,0 +1,18 @@
+{
+    "general": {
+        "search": "https://frontend-api-v3.pump.fun/coins/search?offset=0&limit=50&sort=market_cap&includeNsfw=false&order=DESC&searchTerm=search_here&type=exact",
+        "koth": "https://frontend-api-v3.pump.fun/coins/king-of-the-hill?includeNsfw=false",
+        "latest_trade": "https://frontend-api-v3.pump.fun/trades/latest",
+        "latest_coin": "https://frontend-api-v3.pump.fun/coins/latest",
+        "current_metas": "https://frontend-api-v3.pump.fun/metas/current",
+        "meta_and_trades": "https://advanced-api-v2.pump.fun/coins/metadata-and-trades/address_here"
+    },
+    "wallets": {
+        "dev_coins": "https://frontend-api-v3.pump.fun/coins/user-created-coins/wallet_address_here?offset=0&limit=10&includeNsfw=false",
+        "wallet_holdings": "https://frontend-api-v3.pump.fun/balances/wallet_address_here?limit=50&offset=0&minBalance=-1"
+    },
+    "token_specific": {
+        "token_trades": "https://frontend-api-v3.pump.fun/trades/all/address_here?limit=200&offset=0&minimumSize=50000000",
+        "token_comments": "https://frontend-api-v3.pump.fun/replies/address_here?limit=1000&offset=0"
+    }
+}

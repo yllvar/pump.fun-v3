@@ -1,0 +1,25 @@
+2025-09-29 04:26:01,894 - INFO - Starting rate limit tests...
+2025-09-29 04:26:02,896 - INFO - Testing endpoint: Search Coins (GET search/coins)
+2025-09-29 04:26:02,899 - ERROR - ✗ Failed: Session.request() got an unexpected keyword argument 'query'
+2025-09-29 04:26:03,902 - INFO - Testing endpoint: Get Latest Coins (GET coins/latest)
+2025-09-29 04:26:04,352 - INFO - ✓ Success - Rate limit: None/None
+2025-09-29 04:26:05,358 - INFO - Testing endpoint: Get Token Info (GET tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF)
+2025-09-29 04:26:05,653 - ERROR - API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:26:05,654 - ERROR - ✗ Failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:26:06,656 - INFO - Testing endpoint: Get Token Trades (GET trades/token/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF)
+2025-09-29 04:26:06,941 - ERROR - API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/trades/token/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:26:06,941 - ERROR - ✗ Failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/trades/token/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF
+2025-09-29 04:26:07,944 - INFO - Testing endpoint: Get Wallet Holdings (GET wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/tokens)
+2025-09-29 04:26:08,234 - ERROR - API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/tokens
+2025-09-29 04:26:08,234 - ERROR - ✗ Failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/tokens
+2025-09-29 04:26:09,239 - INFO - Testing endpoint: Get Wallet Created Coins (GET wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/created)
+2025-09-29 04:26:09,525 - ERROR - API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/created
+2025-09-29 04:26:09,525 - ERROR - ✗ Failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/created
+2025-09-29 04:26:10,527 - INFO - Testing endpoint: Get Latest Trades (GET trades/latest)
+2025-09-29 04:26:10,860 - INFO - ✓ Success - Rate limit: None/None
+2025-09-29 04:26:11,863 - INFO - Testing endpoint: Get Trending Tokens (GET tokens/trending)
+2025-09-29 04:26:12,147 - ERROR - API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/trending
+2025-09-29 04:26:12,147 - ERROR - ✗ Failed: API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/trending
+2025-09-29 04:26:12,148 - INFO - Results saved to rate_limit_results.json
+2025-09-29 04:26:12,148 - INFO - All tests completed!
+2025-09-29 04:26:12,148 - INFO - Rate limit testing complete!

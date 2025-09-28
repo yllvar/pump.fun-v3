@@ -1,0 +1,16 @@
+{
+  "name": "pumpfun-javascript-examples",
+  "version": "1.0.0",
+  "description": "JavaScript examples for Pump.fun API",
+  "scripts": {
+    "start": "node get_latest_trade.js",
+    "search": "node search_coins.js",
+    "analyze": "node market_analyzer.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

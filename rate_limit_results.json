@@ -1,0 +1,100 @@
+{
+  "Search Coins": {
+    "name": "Search Coins",
+    "endpoint": "search/coins",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:02.896992",
+    "rate_limit_headers": {},
+    "success": false,
+    "error": "Session.request() got an unexpected keyword argument 'query'",
+    "response_time_ms": null,
+    "response_status": null
+  },
+  "Get Latest Coins": {
+    "name": "Get Latest Coins",
+    "endpoint": "coins/latest",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:03.903242",
+    "rate_limit_headers": {
+      "X-RateLimit-Limit": null,
+      "X-RateLimit-Remaining": null,
+      "X-RateLimit-Reset": null,
+      "Retry-After": null
+    },
+    "success": true,
+    "error": null,
+    "response_time_ms": 449,
+    "response_status": 200
+  },
+  "Get Token Info": {
+    "name": "Get Token Info",
+    "endpoint": "tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:05.358331",
+    "rate_limit_headers": {},
+    "success": false,
+    "error": "API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF",
+    "response_time_ms": null,
+    "response_status": null
+  },
+  "Get Token Trades": {
+    "name": "Get Token Trades",
+    "endpoint": "trades/token/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:06.656690",
+    "rate_limit_headers": {},
+    "success": false,
+    "error": "API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/trades/token/5HvmxE9M24Z1EPxgyd6vCWeYnDF9bMnQYnfLvE2USMHF",
+    "response_time_ms": null,
+    "response_status": null
+  },
+  "Get Wallet Holdings": {
+    "name": "Get Wallet Holdings",
+    "endpoint": "wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/tokens",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:07.944572",
+    "rate_limit_headers": {},
+    "success": false,
+    "error": "API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/tokens",
+    "response_time_ms": null,
+    "response_status": null
+  },
+  "Get Wallet Created Coins": {
+    "name": "Get Wallet Created Coins",
+    "endpoint": "wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/created",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:09.240059",
+    "rate_limit_headers": {},
+    "success": false,
+    "error": "API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/wallets/33UdRJm2p7FGYivdXEzMSM2qjpP3VcPGNTiDBhtCQybJ/created",
+    "response_time_ms": null,
+    "response_status": null
+  },
+  "Get Latest Trades": {
+    "name": "Get Latest Trades",
+    "endpoint": "trades/latest",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:10.527936",
+    "rate_limit_headers": {
+      "X-RateLimit-Limit": null,
+      "X-RateLimit-Remaining": null,
+      "X-RateLimit-Reset": null,
+      "Retry-After": null
+    },
+    "success": true,
+    "error": null,
+    "response_time_ms": 332,
+    "response_status": 200
+  },
+  "Get Trending Tokens": {
+    "name": "Get Trending Tokens",
+    "endpoint": "tokens/trending",
+    "method": "GET",
+    "tested_at": "2025-09-28T20:26:11.863353",
+    "rate_limit_headers": {},
+    "success": false,
+    "error": "API request failed: 404 Client Error: Not Found for url: https://frontend-api-v3.pump.fun/tokens/trending",
+    "response_time_ms": null,
+    "response_status": null
+  }
+}

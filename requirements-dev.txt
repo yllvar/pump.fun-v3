@@ -1,0 +1,28 @@
+# Testing
+pytest>=6.0.0
+pytest-cov>=2.0.0
+pytest-mock>=3.0.0
+pytest-asyncio>=0.15.0
+pytest-xdist>=2.0.0
+
+# Linting & Formatting
+black>=21.0
+isort>=5.0.0
+flake8>=3.9.0
+mypy>=0.9.0
+types-requests>=2.25.0
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.0
+sphinx-autodoc-typehints>=1.12.0
+
+# Build & Release
+build>=0.4.0
+twine>=3.4.0
+pre-commit>=2.0.0
+
+# Other development tools
+python-dotenv>=0.15.0
+httpx>=0.20.0
+responses>=0.14.0
