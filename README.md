@@ -37,39 +37,6 @@ Interact with the Pump.fun API. This repository provides official pump.fun front
   - 📡 Proxying and middleware support
   - 🔐 API key rotation (when available)
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.8+ or Node.js 14+
-- pip (Python) or npm (Node.js)
-- Pump.fun API key (if required)
-
-### Installation
-
-#### Python Package
-```bash
-# Install from PyPI (recommended)
-pip install pumpfun-api
-
-# Or install from source
-git clone https://github.com/yllvar/pump.fun-v3.git
-cd pump.fun-v3
-pip install -e .
-```
-
-#### JavaScript/Node.js
-```bash
-# Using npm
-npm install pumpfun-api
-
-# Or using Yarn
-yarn add pumpfun-api
-
-# Or install from source
-git clone https://github.com/yllvar/pump.fun-v3.git
-cd pump.fun-v3/examples/javascript
-npm install
-```
 
 ## 💻 Usage Examples
 
